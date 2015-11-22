@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<script src="jquery.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+		<script src="track.js"></script>
+		<link rel="stylesheet" href="track.css">
+		<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		
+		<div id="main-container">
+			<div class="header">
+				<div class='title pull-left'><i class='fa fa-truck logo'></i>Trackr</div>
+				<div class='header-info pull-right'>
+					<div class='header-category' id='hits'>
+						<i class= 'fa fa-tachometer'></i>
+						<div class='numbers' id='hits-val' title='API Hits' alt="API Hits">0</div>
+					</div>
+					<div class='header-category' id='parcels' title='Parcels' alt="Parcels">
+						<i class= 'fa fa-gift'></i>
+						<div class='numbers' id='parcels-val'>0</div>
+					</div>
+				</div>
+			</div>
+
+			<div id='body-container'>
+				<div class='left-panel pull-left'>
+					<ul class='item-list' id='item-list'>
+					</ul>
+				</div>
+				<div class='details pull-right'>
+					<div class='details-wrapper'>
+						<div class='details-section'>
+							<div class='item-left-panel pull-left'>
+								<img class="thumbnail item-image" src='data:image/png;base64,R0lGODlhFAAUAIAAAP///wAAACH5BAEAAAAALAAAAAAUABQAAAIRhI+py+0Po5y02ouz3rz7rxUAOw=='>
+							</div>
+							<div class='item-card'>
+								<div class='sub-group'>
+									<div class='item-name info'></div>
+								</div>
+								
+								<div class='sub-group'>
+									<div class='static'>Type </div>
+									<div class='item-type info inline'></div>
+									<div class='static'>Quantity </div>
+									<div class='item-quantity info inline'></div>
+								</div>
+								<div class='sub-group'>
+									<div class='static'>Weight </div>
+									<div class='item-weight info inline'></div>
+									<div class='static'>Color </div>
+									<div class='item-color info inline'><i class='fa fa-eyedropper color-logo'></i></div>
+								</div>
+								<div class='sub-group contact'>
+									<div class='static'>Estimated Time of Delivery </div>
+									<div class='item-date info inline'></div>
+									<div class='static'>Contact </div>
+									<div class='item-phone info inline'></div>
+								</div>
+								<div class='item-price info'></div>
+								<div class='extra'>
+									<i class="fa fa-share-alt fa-2x share" title="Share" alt="Share"></i>
+									<i class="fa fa-heart fa-2x like" title="Like" alt="Like"></i>
+								</div>
+							</div>
+						</div>
+						<div class='map-container'>
+	    					<div id="map_canvas"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
